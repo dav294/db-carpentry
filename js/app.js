@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('.btn-primary');
       const original = btn.textContent;
       btn.textContent = 'Message Sent ✓';
-      btn.style.background = '#3A6B44';
+      btn.style.background = '#B8852A';
       form.querySelectorAll('input, textarea, select').forEach(el => (el.disabled = true));
       setTimeout(() => {
         btn.textContent = original;

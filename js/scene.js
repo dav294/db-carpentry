@@ -33,7 +33,7 @@ geo.setAttribute('position', new THREE.BufferAttribute(positions, 3));
 
 const mat = new THREE.PointsMaterial({
   size: 0.04,
-  color: new THREE.Color(0x6BAE7A),
+  color: new THREE.Color(0xE3B051),
   transparent: true,
   opacity: 0.48,
   sizeAttenuation: true,
