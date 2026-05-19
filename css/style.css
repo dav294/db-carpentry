@@ -157,19 +157,14 @@ h1, h2, h3, h4 {
   gap: 10px;
 }
 .logo-img {
-  height: 46px;
-  width: 46px;
-  border-radius: 50%;
-  object-fit: cover;
+  height: 52px;
+  width: auto;
+  border-radius: 6px;
+  object-fit: contain;
+  /* Neutralise the white JPG background and render as clean white on dark */
+  filter: brightness(0) invert(1);
 }
-.logo-wordmark {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  color: var(--text);
-  letter-spacing: 0.02em;
-}
-.logo-wordmark strong { color: var(--accent); }
-.footer-logo-img { height: 52px; width: 52px; margin-bottom: 8px; }
+.footer-logo-img { height: 56px; width: auto; margin-bottom: 14px; }
 
 .nav-links {
   display: flex;
