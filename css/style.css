@@ -827,7 +827,7 @@ h1, h2, h3, h4 {
 }
 .footer-brand-name strong { color: var(--accent); }
 .footer-brand p {
-  color: #3A3828;
+  color: #706860;
   font-size: 0.88rem;
   line-height: 1.72;
   margin: 0 0 22px;
@@ -839,7 +839,7 @@ h1, h2, h3, h4 {
   border-radius: 50%;
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.065);
-  color: #4A4838;
+  color: #706860;
   display: flex; align-items: center; justify-content: center;
   transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
@@ -858,12 +858,12 @@ h1, h2, h3, h4 {
   margin-bottom: 18px;
 }
 .footer-col ul { display: flex; flex-direction: column; gap: 9px; }
-.footer-col a { color: #3A3828; font-size: 0.88rem; transition: color 0.2s; }
+.footer-col a { color: #706860; font-size: 0.88rem; transition: color 0.2s; }
 .footer-col a:hover { color: var(--accent-h); }
-.footer-col p { color: #3A3828; font-size: 0.88rem; margin-bottom: 8px; line-height: 1.5; }
-.footer-col p a { color: #3A3828; transition: color 0.2s; }
+.footer-col p { color: #706860; font-size: 0.88rem; margin-bottom: 8px; line-height: 1.5; }
+.footer-col p a { color: #706860; transition: color 0.2s; }
 .footer-col p a:hover { color: var(--accent-h); }
-.footer-areas { font-size: 0.78rem !important; color: #2E2A20 !important; line-height: 1.6 !important; margin-top: 4px; }
+.footer-areas { font-size: 0.78rem !important; color: #5A5448 !important; line-height: 1.6 !important; margin-top: 4px; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.04);
   padding-top: 28px;
@@ -873,7 +873,7 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
   gap: 10px;
 }
-.footer-bottom p { font-size: 0.78rem; color: #2E2A20; }
+.footer-bottom p { font-size: 0.78rem; color: #5A5448; }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1040px) {

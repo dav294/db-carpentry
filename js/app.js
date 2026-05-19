@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.ticker.add((time) => { lenis.raf(time * 1000); });
   gsap.ticker.lagSmoothing(0);
 
+  // Recalculate scroll positions after Lenis initialises
+  requestAnimationFrame(() => ScrollTrigger.refresh());
+
   // ── Nav scroll state ──
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
@@ -100,10 +103,11 @@ document.addEventListener('DOMContentLoaded', () => {
   fadeUp('#portfolio .section-header', '#portfolio', { y: 24 });
   fadeUp('.portfolio-filters', '.portfolio-filters', { y: 16, dur: 0.5 });
   gsap.from('.port-item', {
-    scrollTrigger: { trigger: '.portfolio-grid', start: 'top 82%' },
-    opacity: 0, y: 50, scale: 0.96, duration: 0.7,
-    stagger: { amount: 0.55, from: 'start' },
+    scrollTrigger: { trigger: '.portfolio-grid', start: 'top 90%', once: true },
+    opacity: 0, y: 40, duration: 0.7,
+    stagger: { amount: 0.5, from: 'start' },
     ease: 'power3.out',
+    immediateRender: false,
   });
   gsap.from('.portfolio-cta', {
     scrollTrigger: { trigger: '.portfolio-cta', start: 'top 88%' },
