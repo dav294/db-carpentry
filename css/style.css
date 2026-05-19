@@ -498,25 +498,23 @@ h1, h2, h3, h4 {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 300px 300px 340px;
-  gap: 10px;
+  grid-template-rows: 320px 320px 360px;
+  gap: 16px;
 }
 .port-feature {
   grid-column: 1;
   grid-row: 1 / 3;
-  aspect-ratio: unset !important;
 }
 .port-wide {
   grid-column: 1 / 4;
   grid-row: 3;
-  aspect-ratio: unset !important;
 }
 .port-item {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   background: var(--bg-card);
-  aspect-ratio: 4 / 5;
+  /* no aspect-ratio — explicit row heights define sizing, avoids paint overflow */
   transition: opacity 0.35s ease, transform 0.35s ease;
 }
 .port-item.hidden {
@@ -531,8 +529,9 @@ h1, h2, h3, h4 {
 .portfolio-grid.filtered .port-wide {
   grid-column: auto;
   grid-row: auto;
-  aspect-ratio: 4 / 5 !important;
-  height: auto;
+}
+.portfolio-grid.filtered .port-item {
+  aspect-ratio: 4 / 5;
 }
 .port-item img {
   width: 100%; height: 100%;
@@ -880,7 +879,7 @@ h1, h2, h3, h4 {
   .services-grid    { grid-template-columns: repeat(2, 1fr); }
   .stats-grid       { grid-template-columns: repeat(2, 1fr); }
   .footer-grid      { grid-template-columns: 1fr 1fr; gap: 36px; }
-  .portfolio-grid   { grid-template-rows: 260px 260px 300px; }
+  .portfolio-grid   { grid-template-rows: 280px 280px 320px; }
 }
 
 @media (max-width: 768px) {
