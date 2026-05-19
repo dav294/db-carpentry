@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DB Carpentry — Dublin's expert bespoke carpenters. Fitted wardrobes, kitchen fitting, staircases, TV units & more. Free quotes, no obligation." />
+  <title>DB Carpentry | Bespoke Carpentry Dublin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo/logo.png" alt="DB Carpentry" class="logo-img" onerror="this.style.display='none'" />
+        <span class="logo-wordmark"><strong>DB</strong> Carpentry</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Our Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta">Free Quote</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE MENU ===== -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-close" id="mobile-close" aria-label="Close menu">✕</button>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Our Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Get a Quote</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Bespoke Carpentry · Dublin, Ireland</p>
+      <h1 class="hero-title">
+        <span class="hero-line">Crafted</span>
+        <span class="hero-line hero-accent">by hand.</span>
+        <span class="hero-line">Built to last.</span>
+      </h1>
+      <p class="hero-sub">Expert bespoke carpentry for Dublin homes — from fitted wardrobes and kitchens to full staircase renovations. Every piece measured, crafted, and installed to perfection.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        <a href="#portfolio" class="btn btn-ghost">See Our Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <div id="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>Fully Insured</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>Free Quotes</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>Dublin Based</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="trust-icon">★</span>
+        <span>5-Star Rated</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>No Hidden Costs</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">What We Do</span>
+        <h2 class="section-heading">Our Services</h2>
+        <p class="section-sub">From bespoke fitted wardrobes to complete staircase renovations — handcrafted with precision, installed with care.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <div class="service-img-bg" data-svc="wardrobes">
+              <img src="assets/images/svc-wardrobes.jpg" alt="Fitted Wardrobes Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Fitted Wardrobes</h3>
+            <p>Floor-to-ceiling bespoke wardrobes designed around your exact dimensions. Choose your finish, handles, and internal layout — no off-the-shelf compromises.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <div class="service-img-bg" data-svc="kitchens">
+              <img src="assets/images/svc-kitchens.jpg" alt="Kitchen Fitting Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Kitchen Fitting</h3>
+            <p>Expert kitchen unit installation — full new kitchens or single unit replacements. Precision fitting and a clean, professional finish every time.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <div class="service-img-bg" data-svc="stairs">
+              <img src="assets/images/svc-stairs.jpg" alt="Staircase Renovation Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Staircases</h3>
+            <p>New installations and full renovations — treads, risers, balustrades, and handrails. Transform the centrepiece of your home beautifully and safely.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <div class="service-img-bg" data-svc="tvunits">
+              <img src="assets/images/svc-tvunits.jpg" alt="TV Units &amp; Media Walls Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>TV Units &amp; Media Walls</h3>
+            <p>Custom built-in TV units, media walls, and alcove shelving. Maximise your living space with storage that looks as good as it functions.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <div class="service-img-bg" data-svc="decking">
+              <img src="assets/images/svc-decking.jpg" alt="Decking &amp; Garden Structures Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Decking &amp; Garden Structures</h3>
+            <p>Quality timber and composite decking, pergolas, and garden rooms. Extend your living space outdoors — built to withstand the Irish climate.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <div class="service-img-bg" data-svc="skirting">
+              <img src="assets/images/svc-skirting.jpg" alt="Skirting &amp; Second Fix Dublin" />
+            </div>
+          </div>
+          <div class="service-body">
+            <h3>Skirting &amp; Second Fix</h3>
+            <p>Precision second-fix carpentry — skirting boards, architraves, door casings, and more. The finishing touches that elevate every room.</p>
+            <a href="#contact" class="service-link">Get a Quote →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section id="stats" class="section section-forest">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="8">0</span>
+            <span class="stat-suf">+</span>
+          </div>
+          <p class="stat-label">Years in Trade</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="300">0</span>
+            <span class="stat-suf">+</span>
+          </div>
+          <p class="stat-label">Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="100">0</span>
+            <span class="stat-suf">%</span>
+          </div>
+          <p class="stat-label">Satisfaction Rate</p>
+        </div>
+        <div class="stat-item">
+          <div class="stat-row">
+            <span class="stat-num" data-target="5">0</span>
+            <span class="stat-suf">★</span>
+          </div>
+          <p class="stat-label">Google Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">Recent Projects</span>
+        <h2 class="section-heading">Our Work</h2>
+        <p class="section-sub">A selection of recently completed projects from homes across Dublin. Add your own images to the assets/images folder.</p>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="pf-btn active" data-filter="all">All</button>
+        <button class="pf-btn" data-filter="wardrobes">Wardrobes</button>
+        <button class="pf-btn" data-filter="kitchens">Kitchens</button>
+        <button class="pf-btn" data-filter="stairs">Stairs</button>
+        <button class="pf-btn" data-filter="tvunits">TV Units</button>
+        <button class="pf-btn" data-filter="outdoor">Outdoor</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolio-grid">
+        <div class="port-item port-feature" data-cat="wardrobes">
+          <img src="assets/images/port-1.jpg" alt="Bespoke fitted wardrobe" />
+          <div class="port-overlay">
+            <span class="port-label">Fitted Wardrobes</span>
+          </div>
+        </div>
+        <div class="port-item" data-cat="kitchens">
+          <img src="assets/images/port-2.jpg" alt="Kitchen fitting" />
+          <div class="port-overlay">
+            <span class="port-label">Kitchen Fitting</span>
+          </div>
+        </div>
+        <div class="port-item" data-cat="tvunits">
+          <img src="assets/images/port-3.jpg" alt="TV unit" />
+          <div class="port-overlay">
+            <span class="port-label">TV Unit</span>
+          </div>
+        </div>
+        <div class="port-item" data-cat="stairs">
+          <img src="assets/images/port-4.jpg" alt="Staircase renovation" />
+          <div class="port-overlay">
+            <span class="port-label">Staircase</span>
+          </div>
+        </div>
+        <div class="port-item" data-cat="outdoor">
+          <img src="assets/images/port-5.jpg" alt="Garden decking" />
+          <div class="port-overlay">
+            <span class="port-label">Garden Decking</span>
+          </div>
+        </div>
+        <div class="port-item port-wide" data-cat="wardrobes">
+          <img src="assets/images/port-6.jpg" alt="Master bedroom wardrobe" />
+          <div class="port-overlay">
+            <span class="port-label">Master Bedroom Wardrobe</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-cta">
+        <p>See more of our work on Instagram</p>
+        <div class="portfolio-cta-btns">
+          <a href="https://www.instagram.com/_dbcarpentry/" target="_blank" rel="noopener" class="btn btn-ghost">@_dbcarpentry ↗</a>
+          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section section-dark">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col">
+          <div class="about-img-frame">
+            <img src="assets/images/about.jpg" alt="DB Carpentry craftsman at work" />
+          </div>
+          <div class="about-badge">Based in Dublin, Ireland</div>
+        </div>
+        <div class="about-text-col">
+          <span class="tag">Who We Are</span>
+          <h2 class="section-heading">Craftsmanship you can see. Service you can trust.</h2>
+          <p class="body-copy">We're DB Carpentry — a Dublin-based team of skilled carpenters with a passion for quality and an eye for detail. From the first site visit to the final coat of finish, we take pride in every step of every project.</p>
+          <p class="body-copy">Good carpentry isn't just a job to us — it's a craft. We build pieces that become part of your home for years to come. That's why we never cut corners, never use inferior materials, and never leave until you're completely satisfied.</p>
+          <div class="about-values">
+            <div class="value-row"><span class="check">✓</span> Fully insured &amp; professional</div>
+            <div class="value-row"><span class="check">✓</span> Free, no-obligation quotes</div>
+            <div class="value-row"><span class="check">✓</span> Dublin-based, locally trusted</div>
+            <div class="value-row"><span class="check">✓</span> Fixed prices — no surprises</div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">How It Works</span>
+        <h2 class="section-heading">Simple. Transparent. Reliable.</h2>
+        <p class="section-sub">A clear process from your first contact to the final finish — no surprises, no hassle, just results.</p>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>Free Consultation</h3>
+            <p>Reach out and we'll arrange a visit to your home. We discuss your vision, take accurate measurements, and understand exactly what you need — no pressure, no obligation.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>Clear Quote</h3>
+            <p>You'll receive a transparent, itemised quote with no vague estimates and no hidden costs. A fair price for quality work, agreed before we begin.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>Precision Crafting</h3>
+            <p>Your pieces are handcrafted using premium materials to exact measurements. Every component built to fit your space perfectly — no off-cuts, no compromise.</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>Flawless Installation</h3>
+            <p>We arrive on time, work cleanly, and finish to a standard you'll be proud of. We don't leave until you're completely happy with every detail.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="section section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">What Clients Say</span>
+        <h2 class="section-heading">Trusted across Dublin</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"Outstanding work on our fitted wardrobes. The finish was perfect, they were tidy throughout and the result transformed the bedroom completely. Highly recommend DB Carpentry."</p>
+          <div class="t-author">
+            <div class="t-avatar">JM</div>
+            <div>
+              <strong>John M.</strong>
+              <span>Clontarf, Dublin</span>
+            </div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"Had a full kitchen fitted and couldn't be happier. Professional, on time, and the craftsmanship is brilliant. We've already recommended them to three neighbours."</p>
+          <div class="t-author">
+            <div class="t-avatar">SO</div>
+            <div>
+              <strong>Sarah O'B.</strong>
+              <span>Raheny, Dublin</span>
+            </div>
+          </div>
+        </div>
+        <div class="t-card">
+          <div class="t-stars">★★★★★</div>
+          <p class="t-quote">"DB Carpentry built us a custom TV unit and media wall. Exactly what we had in mind — if anything, even better. Great communication throughout and spotless cleanup after."</p>
+          <div class="t-author">
+            <div class="t-avatar">PK</div>
+            <div>
+              <strong>Paul K.</strong>
+              <span>Artane, Dublin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-forest">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <span class="tag tag-light">Get In Touch</span>
+          <h2 class="section-heading light">Ready to start your project?</h2>
+          <p class="contact-intro">Get a free, no-obligation quote today. Fill in the form or reach out directly — we're always happy to discuss your project.</p>
+          <div class="contact-details">
+            <div class="c-item">
+              <span class="c-icon">📞</span>
+              <div>
+                <span class="c-label">Call or WhatsApp</span>
+                <a href="tel:+353000000000" class="c-val">+353 [ADD PHONE NUMBER]</a>
+              </div>
+            </div>
+            <div class="c-item">
+              <span class="c-icon">✉</span>
+              <div>
+                <span class="c-label">Email Us</span>
+                <a href="mailto:info@dbcarpentry.ie" class="c-val">[ADD EMAIL ADDRESS]</a>
+              </div>
+            </div>
+            <div class="c-item">
+              <span class="c-icon">📍</span>
+              <div>
+                <span class="c-label">Based In</span>
+                <span class="c-val">Dublin, Ireland</span>
+              </div>
+            </div>
+            <div class="c-item">
+              <span class="c-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </span>
+              <div>
+                <span class="c-label">Follow Our Work</span>
+                <a href="https://www.instagram.com/_dbcarpentry/" target="_blank" rel="noopener" class="c-val">@_dbcarpentry</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="f-group">
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="f-group">
+              <label for="fphone">Phone Number</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+353 87 000 0000" />
+            </div>
+            <div class="f-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="f-group">
+              <label for="fservice">Service Required</label>
+              <select id="fservice" name="service">
+                <option value="">Select a service...</option>
+                <option value="wardrobes">Fitted Wardrobes</option>
+                <option value="kitchens">Kitchen Fitting</option>
+                <option value="stairs">Staircases</option>
+                <option value="tvunits">TV Units &amp; Media Walls</option>
+                <option value="decking">Decking &amp; Garden Structures</option>
+                <option value="skirting">Skirting &amp; Second Fix</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="f-group">
+              <label for="fmessage">Tell Us About Your Project</label>
+              <textarea id="fmessage" name="message" placeholder="Describe your project, room size, any specific requirements..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo/logo.png" alt="DB Carpentry" class="logo-img footer-logo-img" onerror="this.style.display='none'" />
+          <p class="footer-brand-name"><strong>DB</strong> Carpentry</p>
+          <p>Bespoke carpentry crafted for Dublin homes. Quality you can see. Service you can trust.</p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/_dbcarpentry/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Fitted Wardrobes</a></li>
+            <li><a href="#services">Kitchen Fitting</a></li>
+            <li><a href="#services">Staircases</a></li>
+            <li><a href="#services">TV Units &amp; Media Walls</a></li>
+            <li><a href="#services">Decking &amp; Garden</a></li>
+            <li><a href="#services">Skirting &amp; Second Fix</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Get a Quote</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p><a href="tel:+353000000000">+353 [ADD PHONE]</a></p>
+          <p><a href="mailto:info@dbcarpentry.ie">[ADD EMAIL]</a></p>
+          <p>Dublin, Ireland</p>
+          <p class="footer-areas">Serving Dublin &amp; surrounding areas</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 DB Carpentry. All rights reserved.</p>
+        <p>Serving Dublin &amp; surrounding areas</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script type="module" src="js/scene.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
